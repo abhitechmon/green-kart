@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { withStyles } from "@material-ui/core/styles";
 import Navbar from "./components/Navbar";
 import ItemsList from "./components/ItemsList";
+import Header from "./components/Header";
 
 const styles = (theme) => ({
   root: {
@@ -20,6 +21,7 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar />
+        <Header/>
         <ItemsList />
       </div>
     );
